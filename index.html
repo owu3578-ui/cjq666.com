@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>陈佳岐</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(270deg,#000000,#0a0a2e,#000000);
+background-size:600% 600%;
+animation:bgMove 10s infinite alternate;
+font-family:Arial;
+overflow:hidden;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+100%{background-position:100% 50%;}
+}
+
+h1{
+font-size:80px;
+color:#fff;
+letter-spacing:8px;
+text-shadow:
+0 0 10px #00ffff,
+0 0 20px #00ffff,
+0 0 40px #00ffff,
+0 0 80px #00ffff;
+animation:glow 2s infinite alternate;
+margin-bottom:40px;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px #ff00ff;}
+to{ text-shadow:0 0 40px #00ffff;}
+}
+
+img{
+width:500px;
+border-radius:20px;
+box-shadow:0 0 20px cyan;
+transition:0.5s;
+}
+
+img:hover{
+transform:scale(1.08) rotate(1deg);
+box-shadow:0 0 60px #00ffff;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>陈佳岐</h1>
+
+<img src="0.jpg">
+
+</body>
+</html>
